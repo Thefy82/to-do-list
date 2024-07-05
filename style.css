@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    background: url("https://images.pexels.com/photos/2736499/pexels-photo-2736499.jpeg?cs=srgb&dl=pexels-content-pixie-1405717-2736499.jpg&fm=jpg")
+      no-repeat center center fixed;
+    background-size: cover;
+    padding: 10px;
+  }
+  
+  .todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 150px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px #afafaf;
+  }
+  
+  h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    position: relative;
+  }
+  
+  h2 img {
+    width: 40px;
+    position: absolute;
+    right: 0;
+    margin-left: 20px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border: none;
+    outline: 3px groove #000;
+    outline-offset: 5px;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 10px #5d5d5d;
+  }
+  
+  .row input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  input::placeholder {
+    color: #1e008d;
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    padding: 16px 30px;
+    background: #26068f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 1px;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  ul li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 12px 8px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-block: 10px;
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  ul li:hover {
+    background: #ececec;
+    transform: translateY(-2px);
+  }
+  
+  ul li input[type="checkbox"] {
+    margin-right: 15px; /* Added margin to space out checkbox */
+  }
+  
+  ul li span {
+    flex: 1;
+  }
+  
+  ul li .edit-btn, ul li .delete-btn {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background: #26068f;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+    transition: background 0.3s;
+  }
+  
+  ul li .edit-btn:hover, ul li .delete-btn:hover {
+    background: #1e005f;
+  }
+  
+  ul li .delete-btn {
+    margin-left: 20px; /* Ensures delete button is last and spaced out */
+  }
+  
+  ul li.checked {
+    background: #3700a4;
+    color: #fff;
+  }
+  
+  ul li.checked span {
+    color: #fff;
+  }
+  
+  ul li.checked span:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  ul li span:hover {
+    background: #000;
+    color: #fff;
+  }
+  
+  ul li::before {
+    content: "";
+    display: none;
+  }
+  .edit-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.save-btn {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background: #4CAF50;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+.save-btn:hover {
+    background: #45a049;
+}
+  
